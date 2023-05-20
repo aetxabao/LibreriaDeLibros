@@ -1,0 +1,29 @@
+Jar
+=================
+
+mvn package
+
+--> target\LibreriaDeLibros-1.0-SNAPSHOT.jar
+
+
+Mac .dmg installer
+==================
+
+/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/jpackage --name LibreriaDeLibros --icon src/main/resources/com/masanz/ldl/view/icon.icns --input target --main-jar LibreriaDeLibros-1.0-SNAPSHOT.jar --main-class com.masanz.ldl.Main
+
+--> LibreriaDeLibros-1.0.dmg
+
+After installing open the app by overriding security settings.
+Control-click the app icon, then choose Open from the shortcut menu. Click Open.
+
+
+Win .exe installer
+==================
+
+"C:\Program Files\Java\jdk-17\bin\jpackage.exe" --name LibreriaDeLibros --icon src/main/resources/com/masanz/ldl/view/icon.ico --input target --main-jar LibreriaDeLibros-1.0-SNAPSHOT.jar --main-class com.masanz.ldl.Main
+
+
+Sqlite database
+==================
+
+The database must have a table called libros like the one in script.sql.

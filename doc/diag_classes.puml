@@ -1,0 +1,89 @@
+@startuml
+class model.Libro {
+- int id
+- String titulo
+- String autor
+- int anyo
+- int paginas
++ <<Create>> Libro(int,String,String,int,int)
++ int getId()
++ void setId(int)
++ String getTitulo()
++ void setTitulo(String)
++ String getAutor()
++ void setAutor(String)
++ int getAnyo()
++ void setAnyo(int)
++ int getPaginas()
++ void setPaginas(int)
+}
+class dao.LibreriaDao {
+- String PST_INSERT_LIBRO
+- String PST_UPDATE_LIBRO
+- String PST_DELETE_LIBRO
+- String PST_SELECT_LIBRO
+- String PST_SELECT_LISTA_LIBROS
+- String PST_SELECT_LISTA_AUTOR
+- {static} Logger log
++ boolean insertar(Libro)
++ boolean actualizar(Libro)
++ boolean borrar(int)
++ Libro libro(int)
++ List<Libro> listaLibros()
++ List<Libro> listaLibrosAutor(String)
+}
+class controller.LibreriaController {
+- TextField txtId
+- TextField txtTitulo
+- TextField txtAutor
+- TextField txtAnyo
+- TextField txtPaginas
+- TextField txtAutorSearch
+- TableView<Libro> tvwLibros
+- TableColumn<Libro,Integer> colId
+- TableColumn<Libro,String> colTitulo
+- TableColumn<Libro,String> colAutor
+- TableColumn<Libro,Integer> colAnyo
+- TableColumn<Libro,Integer> colPaginas
+- LibreriaDao libreriaDao
+- {static} Logger log
++ <<Create>> LibreriaController()
++ void initialize()
+- void insert()
+- void update()
+- void delete()
++ void mostrarLibros(List<Libro>)
++ void mostrarLibros()
+- boolean verificarId()
+- boolean verificarCampos()
+- void avisarProblema(String)
+~ void selectRow(MouseEvent)
++ void buscarAutor(ActionEvent)
++ void resetear(ActionEvent)
+}
+class Main {
++ {static} void main(String[])
+}
+class app.LibreriaApplication {
++ {static} URL LOG4J_PROPERTIES
++ {static} String SYSTEM_PROPERTY
+- {static} Logger log
++ void start(Stage)
++ {static} void main(String[])
+}
+class util.DbUtil {
+- {static} String dbPath
+- {static} String URL_SQLITE
+- {static} Connection con
++ {static} boolean testConnection()
++ {static} Connection getConnection()
++ {static} void closeConnections()
+}
+
+Main .right.> app.LibreriaApplication
+app.LibreriaApplication .right.> controller.LibreriaController
+controller.LibreriaController -right-> dao.LibreriaDao
+controller.LibreriaController ..> model.Libro
+dao.LibreriaDao ..> model.Libro
+dao.LibreriaDao ..> util.DbUtil
+@enduml

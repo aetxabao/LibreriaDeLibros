@@ -1,0 +1,35 @@
+[2023-05-18 11:41:34] [INFO ] [LibreriaApplication: 24] --------------------------------------------------------------------------------
+[2023-05-18 11:41:43] [DEBUG] [LibreriaController: 39] Error insertar
+org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: libros.id)
+[2023-05-19 07:58:55] [INFO ] [LibreriaApplication: 25] --------------------------------------------------------------------------------
+[2023-05-19 09:18:40] [INFO ] [LibreriaApplication: 25] --------------------------------------------------------------------------------
+[2023-05-19 09:20:18] [INFO ] [LibreriaApplication: 25] --------------------------------------------------------------------------------
+[2023-05-19 09:21:11] [INFO ] [LibreriaApplication: 25] --------------------------------------------------------------------------------
+[2023-05-19 09:34:47] [INFO ] [LibreriaApplication: 25] --------------------------------------------------------------------------------
+[2023-05-20 19:53:36] [INFO ] [LibreriaApplication: 24] --------------------------------------------------------------------------------
+[2023-05-20 21:01:00] [INFO ] [LibreriaApplication: 24] --------------------------------------------------------------------------------
+[2023-05-20 21:26:21] [INFO ] [LibreriaApplication: 29] --------------------------------------------------------------------------------
+[2023-05-20 21:26:23] [DEBUG] [LibreriaController:128] Error listaLibros SQLException
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: libros)
+[2023-05-20 21:27:01] [INFO ] [LibreriaApplication: 29] --------------------------------------------------------------------------------
+[2023-05-20 21:27:02] [DEBUG] [LibreriaController:128] Error listaLibros SQLException
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: libros)
+[2023-05-20 21:27:33] [INFO ] [LibreriaApplication: 29] --------------------------------------------------------------------------------
+[2023-05-20 21:28:08] [INFO ] [LibreriaApplication: 29] --------------------------------------------------------------------------------
+[2023-05-20 21:40:45] [INFO ] [LibreriaApplication: 29] --------------------------------------------------------------------------------
+[2023-05-20 21:48:42] [INFO ] [LibreriaApplication: 29] --------------------------------------------------------------------------------
+[2023-05-20 21:57:01] [INFO ] [LibreriaApplication: 29] --------------------------------------------------------------------------------
+[2023-05-20 22:07:42] [INFO ] [LibreriaApplication: 29] --------------------------------------------------------------------------------
+[2023-05-20 22:35:47] [INFO ] [LibreriaApplication: 29] --------------------------------------------------------------------------------
+[2023-05-20 22:35:54] [DEBUG] [LibreriaController:128] Error listaLibros SQLException
+java.sql.SQLException: database connection closed
+[2023-05-20 22:37:43] [INFO ] [LibreriaApplication: 29] --------------------------------------------------------------------------------
+[2023-05-20 22:37:51] [DEBUG] [LibreriaController:128] Error listaLibros SQLException
+java.sql.SQLException: database connection closed
+[2023-05-20 22:39:56] [INFO ] [LibreriaApplication: 29] --------------------------------------------------------------------------------
+[2023-05-20 22:41:04] [DEBUG] [LibreriaController:128] Error listaLibros SQLException
+java.sql.SQLException: database connection closed
+[2023-05-20 22:42:38] [INFO ] [LibreriaApplication: 29] --------------------------------------------------------------------------------
+[2023-05-20 22:43:33] [INFO ] [LibreriaApplication: 29] --------------------------------------------------------------------------------
+[2023-05-20 22:48:32] [INFO ] [LibreriaApplication: 29] --------------------------------------------------------------------------------
+[2023-05-20 22:55:05] [INFO ] [LibreriaApplication: 29] --------------------------------------------------------------------------------
